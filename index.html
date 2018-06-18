@@ -1,0 +1,57 @@
+<html>
+
+    <head>
+        
+        <title>Code Playground with JQuery</title>
+ 
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <link rel="stylesheet" href="codeplayground.css">
+        
+        
+    </head>
+
+    <body>
+        
+        <div id="header">
+        
+            <div id="logo">
+            
+                Code Playground
+                
+            </div>
+            
+            <div id="buttonContainer">
+                
+                <div class="toggleButton active" id="html">HTML</div>
+                
+                <div class="toggleButton" id="css">CSS</div>
+                
+                <div class="toggleButton" id="javascript">JavaScript</div>
+                
+                <div class="toggleButton active" id="output">Output</div>
+            
+            </div>
+        
+        </div>
+        
+        <div id="bodyContainer">
+        
+            <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World!</p></textarea>
+            
+            <textarea id="cssPanel" class="panel hidden">p { color: teal; }</textarea>
+            
+            <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello World";</textarea>
+            
+            <iframe id="outputPanel" class="panel"></iframe>
+        
+        
+        </div>
+        
+        <script type="text/javascript" src="script.js">
+            
+          
+
+        </script>
+    </body>
+
+</html>
